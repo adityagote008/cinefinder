@@ -1,4 +1,1 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://yoursite.com/sitemap.xml
+src/App.jsx
