@@ -1,14 +1,9 @@
 import { useState, useRef, useEffect } from "react";
 
 // ── Gemini API Key ───────────────────────────────────────────────────────────
-const GEMINI_KEY = (() => {
-  // 1. Vercel env var (set in Vercel dashboard)
-  try { if (import.meta.env.VITE_GEMINI_API_KEY) return import.meta.env.VITE_GEMINI_API_KEY; } catch(e) {}
-  // 2. index.html window variable
-  try { if (window.__GEMINI_KEY__) return window.__GEMINI_KEY__; } catch(e) {}
-  return "";
-})();
-const IS_CLAUDE_ENV = !GEMINI_KEY;
+// ── AQ.Ab8RN6IzSPd346pm3qWI3FDx-oGStiKkNcShbkqgc9DuHZLjzA ──────────────────────────────────────
+const GEMINI_KEY = "AQ.Ab8RN6IzSPd346pm3qWI3FDx-oGStiKkNcShbkqgc9DuHZLjzA";
+const IS_CLAUDE_ENV = false;
 
 const MOODS = ["Happy","Sad","Emotional","Romantic","Motivational","Dark","Mind Blowing","Family","Horror Night","Weekend Chill","Feel Good","Cozy","Action Packed","Suspense","Comedy","Cry Worthy","Inspirational","Thriller","Mystery","Adventure"];
 const GENRES = ["Action","Adventure","Comedy","Crime","Drama","Fantasy","History","Horror","Mystery","Romance","Sci-Fi","Thriller","War","Animation","Documentary","Sports","Musical","Western"];
